@@ -13,14 +13,41 @@
 			text-shadow:5px;
 			border-style: solid 5px;
 			background-color: orange;
+			border-radius: 5px;
+			}
+			nav {
+				
+			}
+			ul {
+				list-style-type: none;
+				background-color: aqua;
+				border-radius: 5px;
+				border: 1px solid black;
+			}
+			li {
+				display: inline;
+			}
+
+			.topbox {
+				border: 1px solid black;
 			}
 
 		</style>
 	</head>
 	<body>
 		<h1>Ubuntu 20.04 on Digital Ocean</h1>
+		<nav>
+			<ul>
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+				<li>Four</li>
+			</ul>
+		</nav>
+		<div class ="topbox">
 		<h2>Test update 3</h2>
 		<h3>This test might work, now that webhook is set.</h3>
+	</div>
 		<div class="form">
 			<form action="null">
 				<p>Username:
@@ -33,6 +60,10 @@
 			</form>
 
 		</div>
+		<button onclick="trigger">Click here!</button>
+		<script>
+		var trigger = document.getElementsByTagName("body");
+		trigger.backgroundcolor="Green";</script>
 	</body>
 
 
