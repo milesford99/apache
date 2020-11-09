@@ -15,9 +15,9 @@
 			background-color: orange;
 			border-radius: 5px;
 			}
-			nav {
+			
 				
-			}
+		
 			ul {
 				list-style-type: none;
 				background-color: aqua;
@@ -26,6 +26,7 @@
 			}
 			li {
 				display: inline;
+		
 			}
 
 			.topbox {
@@ -34,7 +35,7 @@
 
 		</style>
 	</head>
-	<body>
+	<body id="whole">
 		<h1>Ubuntu 20.04 on Digital Ocean</h1>
 		<nav>
 			<ul>
@@ -60,10 +61,13 @@
 			</form>
 
 		</div>
-		<button onclick="trigger">Click here!</button>
+		<button onclick="changeColor()">Click here!</button>
 		<script>
-		var trigger = document.getElementsByTagName("body");
-		trigger.backgroundcolor="Green";</script>
+		function changeColor() {
+			document.getElementById("whole").style.backgroundColor = "blue";
+		}
+		
+		</script>
 	</body>
 
 
