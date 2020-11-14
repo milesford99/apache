@@ -53,8 +53,9 @@
 		
 
 		
-		<button onclick="changeColor()">Click here!</button>
+		<button onclick="changeColor()">Blue</button>
 		<script>
+		<button onlick="changeRed()">Red</button>
 
 		var bodywhole = document.getElementById("whole").style.backgroundColor;
 
@@ -69,6 +70,14 @@
 				makeBlue();
 			} else {
 				makeRed();
+			}
+
+		}
+		function changeRed() {
+			if (bodywhole = "blue") {
+				makeRed();
+			} else {
+				makeBlue();
 			}
 
 		}
