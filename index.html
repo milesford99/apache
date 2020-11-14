@@ -1,7 +1,7 @@
 <DOCTYPE! html>
 <html>
 	<head>
-		<title>Apache Site 2</title>
+		<title>M.F. Ultra</title>
 		<style>
 			body {
 			text-align:center;
@@ -36,7 +36,7 @@
 		</style>
 	</head>
 	<body id="whole">
-		<h1>Ubuntu 20.04 on Digital Ocean</h1>
+		<h1>M.F. Ultra</h1>
 		<nav>
 			<ul>
 				<li>One</li>
@@ -47,24 +47,31 @@
 		</nav>
 		<div class ="topbox">
 		<h2>Test update 3</h2>
-		<h3>This test might work, now that webhook is set.</h3>
+		<h3>Blank.</h3>
 	</div>
-		<div class="form">
-			<form action="null">
-				<p>Username:
-					<input type="text" name="username" size="15" maxlength="30" />
-				</p>
-				<p>Password:
-					<input type="password" name="password" size="15" maxlength="30" />
-				</p>
-				<input type="submit" value="Submit"/>
-			</form>
+		
 
-		</div>
+		
 		<button onclick="changeColor()">Click here!</button>
 		<script>
-		function changeColor() {
+
+		var bodywhole = document.getElementById("whole").style.backgroundColor;
+
+		function makeRed() {
+			document.getElementById("whole").style.backgroundColor = "red";
+		}
+		function makeBlue() {
 			document.getElementById("whole").style.backgroundColor = "blue";
+		}
+		function changeColor() {
+			if (bodywhole = "red") {
+				makeBlue();
+			} else if (bodywhole = "blue") {
+				makeRed();
+			} else {
+				makeRed();
+			}
+
 		}
 		
 		</script>
